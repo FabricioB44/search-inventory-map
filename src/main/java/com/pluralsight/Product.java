@@ -1,4 +1,28 @@
 package com.pluralsight;
 
+// One product the store carries: id, name and price.
+// The lookup in main prints the name and the price through the getters,
+// so this class needs no toString().
 public class Product {
+    private int id;
+    private String name;
+    private double price;
+
+    public Product(int id, String name, double price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
